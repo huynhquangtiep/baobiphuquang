@@ -1,27 +1,27 @@
 export const navOptions = [
   {
     id: "home",
-    label: "Home",
+    label: "Trang chủ",
     path: "/",
   },
   {
     id: "listing",
-    label: "All Products",
+    label: "Tất cả sản phẩm",
     path: "/product/listing/all-products",
   },
   {
     id: "listingMen",
-    label: "Men",
+    label: "Hộp đựng",
     path: "/product/listing/men",
   },
   {
     id: "listingWomen",
-    label: "Women",
+    label: "Túi",
     path: "/product/listing/women",
   },
   {
     id: "listingKids",
-    label: "kids",
+    label: "Giấy",
     path: "/product/listing/kids",
   },
 ];
@@ -29,12 +29,12 @@ export const navOptions = [
 export const adminNavOptions = [
   {
     id: "adminListing",
-    label: "Manage All Products",
+    label: "Quản lý tất cả sản phẩm",
     path: "/admin-view/all-products",
   },
   {
     id: "adminNewProduct",
-    label: "Add New Product",
+    label: "Thêm sản phẩm mới",
     path: "/admin-view/add-product",
   },
 ];
@@ -44,7 +44,7 @@ export const registrationFormControls = [
     id: "name",
     type: "text",
     placeholder: "Enter your name",
-    label: "Name",
+    label: "Tên",
     componentType: "input",
   },
   {
@@ -58,7 +58,7 @@ export const registrationFormControls = [
     id: "password",
     type: "password",
     placeholder: "Enter your password",
-    label: "Password",
+    label: "Mật khẩu",
     componentType: "input",
   },
   {
@@ -69,12 +69,8 @@ export const registrationFormControls = [
     componentType: "select",
     options: [
       {
-        id: "admin",
-        label: "Admin",
-      },
-      {
         id: "customer",
-        label: "customer",
+        label: "Khách hàng",
       },
     ],
   },
@@ -92,7 +88,7 @@ export const loginFormControls = [
     id: "password",
     type: "password",
     placeholder: "Enter your password",
-    label: "Password",
+    label: "Mật khẩu",
     componentType: "input",
   },
 ];
@@ -102,41 +98,41 @@ export const adminAddProductformControls = [
     id: "name",
     type: "text",
     placeholder: "Enter name",
-    label: "Name",
+    label: "Tên sản phẩm",
     componentType: "input",
   },
   {
     id: "price",
     type: "number",
     placeholder: "Enter price",
-    label: "Price",
+    label: "Giá",
     componentType: "input",
   },
   {
     id: "description",
     type: "text",
     placeholder: "Enter description",
-    label: "Description",
+    label: "Mô tả",
     componentType: "input",
   },
   {
     id: "category",
     type: "",
     placeholder: "",
-    label: "Category",
+    label: "Loại",
     componentType: "select",
     options: [
       {
         id: "men",
-        label: "Men",
+        label: "Hộp",
       },
       {
         id: "women",
-        label: "Women",
+        label: "Túi",
       },
       {
         id: "kids",
-        label: "Kids",
+        label: "Giấy",
       },
     ],
   },
@@ -144,7 +140,7 @@ export const adminAddProductformControls = [
     id: "deliveryInfo",
     type: "text",
     placeholder: "Enter deliveryInfo",
-    label: "Delivery Info",
+    label: "Thông tin giao hàng",
     componentType: "input",
   },
   {
@@ -168,7 +164,7 @@ export const adminAddProductformControls = [
     id: "priceDrop",
     type: "number",
     placeholder: "Enter Price Drop",
-    label: "Price Drop",
+    label: "Giảm giá",
     componentType: "input",
   },
 ];
@@ -189,17 +185,17 @@ export const AvailableSizes = [
 ];
 
 export const firebaseConfig = {
-  apiKey: "API_KEY",
-  authDomain: "AUTH_DOMAIN",
-  projectId: "PROJECT_ID",
-  storageBucket: "STROAGE_BUCKET",
-  messagingSenderId: "MESSAGING_SENDER_ID",
-  appId: "APP_ID",
-  measurementId: "MEASUREMENT_ID",
+  apiKey: "AIzaSyAEPwpouC2JuZgqGNeq8J0K1sXWW5FG-ds",
+  authDomain: "baobiphuquang-93631.firebaseapp.com",
+  projectId: "baobiphuquang-93631",
+  storageBucket: "baobiphuquang-93631.appspot.com",
+  messagingSenderId: "208650888048",
+  appId: "1:208650888048:web:b46c366bfe0264bdee65b5",
+  measurementId: "G-3EVNE7JLPD",
 };
 
 export const firebaseStroageURL =
-  "YOUR_FIREBASE_STROAGE_URL";
+  "gs://baobiphuquang-93631.appspot.com";
 
 export const addNewAddressFormControls = [
   {

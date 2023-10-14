@@ -170,8 +170,7 @@ export default function Checkout() {
             <div className="bg-white shadow">
               <div className="px-4 py-6 sm:px-8 sm:py-10 flex flex-col gap-5">
                 <h1 className="font-bold text-lg">
-                  Your payment is successfull and you will be redirected to
-                  orders page in 2 seconds !
+                  Thanh toán của bạn thành công và bạn sẽ được chuyển hướng đến trang tư vấn & đặt hàng sau 2 giây!
                 </h1>
               </div>
             </div>
@@ -198,7 +197,7 @@ export default function Checkout() {
     <div>
       <div className="grid sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-32">
         <div className="px-4 pt-8">
-          <p className="font-medium text-xl">Cart Summary</p>
+          <p className="font-medium text-xl">Tóm tắt giỏ hàng</p>
           <div className="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-5">
             {cartItems && cartItems.length ? (
               cartItems.map((item) => (
@@ -222,14 +221,14 @@ export default function Checkout() {
                 </div>
               ))
             ) : (
-              <div>Your cart is empty</div>
+              <div>Giỏ của bạn trống trơn</div>
             )}
           </div>
         </div>
         <div className="mt-10 bg-gray-50 px-4 pt-8 lg:mt-0">
-          <p className="text-xl font-medium">Shipping address details</p>
+          <p className="text-xl font-medium">Chi tiết địa chỉ giao hàng</p>
           <p className="text-gray-400 font-bold">
-            Complete your order by selecting address below
+            Hoàn tất đơn hàng bằng cách chọn địa chỉ bên dưới
           </p>
           <div className="w-full mt-6 mr-0 mb-0 ml-0 space-y-6">
             {addresses && addresses.length ? (
@@ -241,11 +240,11 @@ export default function Checkout() {
                     item._id === selectedAddress ? "border-red-900" : ""
                   }`}
                 >
-                  <p>Name : {item.fullName}</p>
-                  <p>Address : {item.address}</p>
-                  <p>City : {item.city}</p>
-                  <p>Country : {item.country}</p>
-                  <p>PostalCode : {item.postalCode}</p>
+                  <p>Tên : {item.fullName}</p>
+                  <p>Địa chỉ : {item.address}</p>
+                  <p>Thành phố : {item.city}</p>
+                  <p>Quốc gia : {item.country}</p>
+                  <p>Mã bưu điện : {item.postalCode}</p>
                   <button className="mt-5 mr-5 inline-block bg-black text-white px-5 py-3 text-xs font-medium uppercase tracking-wide">
                     {item._id === selectedAddress
                       ? "Selected Address"
@@ -254,18 +253,18 @@ export default function Checkout() {
                 </div>
               ))
             ) : (
-              <p>No addresses added</p>
+              <p>Không có địa chỉ nào được thêm vào</p>
             )}
           </div>
           <button
             onClick={() => router.push("/account")}
             className="mt-5 mr-5 inline-block bg-black text-white px-5 py-3 text-xs font-medium uppercase tracking-wide"
           >
-            Add new address
+            thêm địa chỉ mới
           </button>
           <div className="mt-6 border-t border-b py-2">
             <div className="flex items-center justify-between">
-              <p className="text-sm font-medium text-gray-900">Subtotal</p>
+              <p className="text-sm font-medium text-gray-900">Tổng phụ</p>
               <p className="text-lg font-bold text-gray-900">
                 $
                 {cartItems && cartItems.length
@@ -277,11 +276,11 @@ export default function Checkout() {
               </p>
             </div>
             <div className="flex items-center justify-between">
-              <p className="text-sm font-medium text-gray-900">Shipping</p>
-              <p className="text-lg font-bold text-gray-900">Free</p>
+              <p className="text-sm font-medium text-gray-900">Đang chuyển hàng</p>
+              <p className="text-lg font-bold text-gray-900">Miễn phí</p>
             </div>
             <div className="flex items-center justify-between">
-              <p className="text-sm font-medium text-gray-900">Total</p>
+              <p className="text-sm font-medium text-gray-900">Tổng cộng</p>
               <p className="text-lg font-bold text-gray-900">
                 $
                 {cartItems && cartItems.length
@@ -301,7 +300,7 @@ export default function Checkout() {
                 onClick={handleCheckout}
                 className="disabled:opacity-50 mt-5 mr-5 w-full  inline-block bg-black text-white px-5 py-3 text-xs font-medium uppercase tracking-wide"
               >
-                Checkout
+                Thủ tục thanh toán
               </button>
             </div>
           </div>

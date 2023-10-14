@@ -129,7 +129,7 @@ export default function CommonDetails({ item }) {
                     href="#"
                     className="border-b-2 border-gray-900 py-4 text-sm font-medium text-gray-900"
                   >
-                    Description
+                    Mô tả
                   </a>
                 </nav>
               </div>

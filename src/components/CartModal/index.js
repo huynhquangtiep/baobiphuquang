@@ -149,8 +149,9 @@ export default function CartModal() {
             }}
             className="mt-1.5 w-full inline-block bg-black text-white px-5 py-3 text-xs font-medium uppercase tracking-wide"
           >
-            Go To Cart
+            Đến giỏ hàng
           </button>
+          <a href="https://www.facebook.com/messages/t/1120239096">
           <button
             disabled={cartItems && cartItems.length === 0}
             type="button"
@@ -160,13 +161,17 @@ export default function CartModal() {
             }}
             className="mt-1.5 w-full inline-block bg-black text-white px-5 py-3 text-xs font-medium uppercase tracking-wide disabled:opacity-50"
           >
-            Checkout
+            Liên hệ Facebook
           </button>
+          </a>
+          
           <div className="mt-6 flex justify-center text-center text-sm text-gray-600">
+            <a href="https://www.facebook.com/messages/t/1120239096">
             <button type="button" className="font-medium text-grey">
-              Continue Shopping
+              Tiếp tục liên hệ
               <span aria-hidden="true"> &rarr;</span>
             </button>
+            </a>
           </div>
         </Fragment>
       }

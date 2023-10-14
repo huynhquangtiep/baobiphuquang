@@ -114,13 +114,26 @@ export default function CommonCart({
                   </p>
                 </div>
                 <div className="mt-5 text-center">
+                  <a href="https://www.facebook.com/messages/t/1120239096">
                   <button
-                  onClick={()=>router.push('/checkout')}
-                    disabled={cartItems && cartItems.length === 0}
+                  // onClick={()=>router.push('/checkout')}
+                  //   disabled={cartItems && cartItems.length === 0}
                     className="disabled:opacity-50 group inline-flex w-full items-center justify-center bg-black px-6 py-4 text-lg text-white font-medium uppercase tracking-wide"
                   >
-                    Checkout
+                    Liên hệ tư vấn [Facebook]
                   </button>
+                  </a>
+                  <br></br><br></br>
+                  <a href="https://www.facebook.com/messages/t/1120239096">
+                  <button
+                  // onClick={()=>router.push('/checkout')}
+                  //   disabled={cartItems && cartItems.length === 0}
+                    className="disabled:opacity-50 group inline-flex w-full items-center justify-center bg-black px-6 py-4 text-lg text-white font-medium uppercase tracking-wide"
+                  >
+                    Liên hệ tư vấn [Zalo]
+                  </button>
+                  </a>
+                  
                 </div>
               </div>
             </div>

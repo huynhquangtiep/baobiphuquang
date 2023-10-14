@@ -89,7 +89,7 @@ export default function AdminView() {
                         <div className="flex flex-col gap-2">
                           <div className="flex items-center">
                             <p className="mr-3 text-sm font-medium text-gray-900">
-                              User Name :
+                              Tên tài khoản :
                             </p>
                             <p className="text-sm  font-semibold text-gray-900">
                               {item?.user?.name}
@@ -97,7 +97,7 @@ export default function AdminView() {
                           </div>
                           <div className="flex items-center">
                             <p className="mr-3 text-sm font-medium text-gray-900">
-                              User Email :
+                              Email người dùng :
                             </p>
                             <p className="text-sm  font-semibold text-gray-900">
                               {item?.user?.email}
@@ -105,7 +105,7 @@ export default function AdminView() {
                           </div>
                           <div className="flex items-center">
                             <p className="mr-3 text-sm font-medium text-gray-900">
-                              Total Paid Amount :
+                              Tổng số tiền đã thanh toán :
                             </p>
                             <p className="text-sm  font-semibold text-gray-900">
                               ${item?.totalPrice}

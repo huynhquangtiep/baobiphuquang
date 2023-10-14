@@ -54,7 +54,7 @@ export default function OrderDetails() {
     <div className="py-14 px-4 md:px-6">
       <div className="flex justify-start items-start space-y-2 flex-col">
         <h1 className="text-3xl lg:text-4xl font-bold leading-7 lg:leading-9 text-gray-900">
-          Order #{orderDetails && orderDetails._id}
+          Đặt hàng #{orderDetails && orderDetails._id}
         </h1>
         <p className="text-base font-medium leadong-6 text-gray-600">
           {orderDetails &&
@@ -103,21 +103,21 @@ export default function OrderDetails() {
           <div className="flex justify-center flex-col md:flex-row items-stretch w-full space-y-4 md:space-y-0 md:space-x-5 xl:space-x-8">
             <div className="flex flex-col px-4 py-6 md:p-6 xl:p-8 w-full bg-gray-50 space-y-6">
               <h3 className="text-xl font-semibold leading-6 text-gray-900">
-                Summary
+                Bản tóm tắt
               </h3>
               <div className="flex justify-center items-center w-full space-y-4 flex-col border-gray-200 border-b pb-4">
                 <div className="flex justify-between w-full">
-                  <p className="text-base leading-5 text-gray-800">Subtotal</p>
+                  <p className="text-base leading-5 text-gray-800">Tổng phụ</p>
                   <p className="text-base leading-5 text-gray-900">
                     ${orderDetails && orderDetails.totalPrice}
                   </p>
                 </div>
                 <div className="flex justify-between w-full">
-                  <p className="text-base leading-5 text-gray-800">Shipping</p>
-                  <p className="text-base leading-5 text-gray-900">Free</p>
+                  <p className="text-base leading-5 text-gray-800">Đang chuyển hàng</p>
+                  <p className="text-base leading-5 text-gray-900">Miễn phí</p>
                 </div>
                 <div className="flex justify-between w-full">
-                  <p className="text-base leading-5 text-gray-800">Subtotal</p>
+                  <p className="text-base leading-5 text-gray-800">Tổng phụ</p>
                   <p className="text-base leading-5 text-gray-900">
                     ${orderDetails && orderDetails.totalPrice}
                   </p>
@@ -129,12 +129,12 @@ export default function OrderDetails() {
         <div className="flex flex-col gap-5">
           <div className="bg-gray-50 w-full xl:w-96 flex  items-center md:items-start px-4 py-6 flex-col">
             <h3 className="text-xl font-semibold leading-6 text-gray-900">
-              Customer Details
+              Chi tiết khách hàng
             </h3>
             <div className="flex flex-col justify-start items-start flex-shrink-0">
               <div className="flex gap-4 justify-center flex-col w-full md:justify-start   py-8 border-b border-gray-200">
                 <p className="text-base font-semibold leading-4 text-left text-gray-950">
-                  Name: {user?.name}
+                  Tên: {user?.name}
                 </p>
                 <p className="text-base font-semibold leading-4 text-left text-gray-950">
                   Email: {user?.email}
@@ -145,18 +145,18 @@ export default function OrderDetails() {
           <div className="flex justify-between xl:h-full items-stretch w-full flex-col mt-6 md:mt-0">
             <div className="flex justify-center md:justify-start xl:flex-col flex-col md:space-x-6 lg:space-x-8 xl:space-x-0 space-y-4 md:space-y-0 xl:space-y-12 md:flex-row items-center md:items-start ">
               <div className="flex justify-center md:justify-start items-center md:items-start flex-col space-y-4 xl:mt-8">
-                <p>Shipping Address</p>
+                <p>Địa chỉ giao hàng</p>
                 <p>
-                  Address :{" "}
+                  Địa chỉ :{" "}
                   {orderDetails && orderDetails.shippingAddress.address}
                 </p>
-                <p>City :{orderDetails && orderDetails.shippingAddress.city}</p>
+                <p>Thành phố :{orderDetails && orderDetails.shippingAddress.city}</p>
                 <p>
-                  Country :{" "}
+                  Quốc gia :{" "}
                   {orderDetails && orderDetails.shippingAddress.country}
                 </p>
                 <p>
-                  Postal Code :{" "}
+                  Mã bưu điện :{" "}
                   {orderDetails && orderDetails.shippingAddress.postalCode}
                 </p>
               </div>
@@ -166,7 +166,7 @@ export default function OrderDetails() {
             onClick={() => router.push(`/`)}
             className="mt-5 mr-5  inline-block bg-black text-white px-5 py-3 text-xs font-medium uppercase tracking-wide"
           >
-            Shop Again
+            Mua sắm lại
           </button>
         </div>
       </div>

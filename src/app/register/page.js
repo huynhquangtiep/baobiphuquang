@@ -75,8 +75,8 @@ export default function Register() {
             <div className="flex flex-col items-center justify-start pt-10 pr-10 pb-10 pl-10 bg-white shadow-2xl rounded-xl relative z-10">
               <p className="w-full text-4xl font-medium text-center font-serif">
                 {isRegistered
-                  ? "Registration Successfull !"
-                  : "Sign up for an account"}
+                  ? "Đăng ký thành công ^.^ !"
+                  : "Đăng ký 1 tài khoản!"}
               </p>
               {isRegistered ? (
                 <button
@@ -85,7 +85,7 @@ export default function Register() {
                 "
                 onClick={()=>router.push('/login')}
                 >
-                  Login
+                  Đăng nhập
                 </button>
               ) : (
                 <div className="w-full mt-6 mr-0 mb-0 ml-0 relative space-y-8">

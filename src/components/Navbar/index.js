@@ -90,7 +90,7 @@ export default function Navbar() {
             className="flex items-center cursor-pointer"
           >
             <span className="slef-center text-2xl font-semibold whitespace-nowrap">
-              Ecommercery
+              𝐵𝑎𝑜 𝑏𝑖̀ 𝑃ℎ𝑢́ 𝑄𝑢𝑎𝑛𝑔
             </span>
           </div>
           <div className="flex md:order-2 gap-2">
@@ -102,7 +102,7 @@ export default function Navbar() {
                   }
                   onClick={()=>router.push('/account')}
                 >
-                  Account
+                  Tài khoản
                 </button>
                 <button
                   className={
@@ -110,7 +110,7 @@ export default function Navbar() {
                   }
                   onClick={()=> setShowCartModal(true)}
                 >
-                  Cart
+                  Giỏ hàng
                 </button>
               </Fragment>
             ) : null}
@@ -122,7 +122,7 @@ export default function Navbar() {
                   }
                   onClick={() => router.push("/")}
                 >
-                  Client View
+                  Góc nhìn của khách hàng
                 </button>
               ) : (
                 <button
@@ -131,7 +131,7 @@ export default function Navbar() {
                     "mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white"
                   }
                 >
-                  Admin View
+                  Quản lý sản phẩm
                 </button>
               )
             ) : null}
@@ -142,7 +142,7 @@ export default function Navbar() {
                   "mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white"
                 }
               >
-                Logout
+                Đăng xuất
               </button>
             ) : (
               <button
@@ -151,7 +151,7 @@ export default function Navbar() {
                   "mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white"
                 }
               >
-                Login
+                Đăng nhập
               </button>
             )}
             <button
@@ -162,7 +162,7 @@ export default function Navbar() {
               aria-expanded="false"
               onClick={() => setShowNavModal(true)}
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">Mở menu chính</span>
               <svg
                 className="w-6 h-6"
                 aria-hidden="true"

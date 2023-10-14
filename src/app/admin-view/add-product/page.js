@@ -65,7 +65,7 @@ const initialFormData = {
   sizes: [],
   deliveryInfo: "",
   onSale: "no",
-  imageUrl: "",
+  imageUrl: " ",
   priceDrop: 0,
 };
 

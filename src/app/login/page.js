@@ -79,7 +79,7 @@ export default function Login() {
           <div className="w-full mt-10 mr-0 mb-0 ml-0 relative max-w-2xl lg:mt-0 lg:w-5/12">
             <div className="flex flex-col items-center justify-start pt-10 pr-10 pb-10 pl-10 bg-white shadow-2xl rounded-xl relative z-10">
               <p className="w-full text-4xl font-medium text-center font-serif">
-                Login
+                Đăng nhập
               </p>
               <div className="w-full mt-6 mr-0 mb-0 ml-0 relative space-y-8">
                 {loginFormControls.map((controlItem) =>
@@ -118,14 +118,14 @@ export default function Login() {
                   )}
                 </button>
                 <div className="flex flex-col gap-2">
-                  <p>New to website ?</p>
+                  <p>Bạn mới biết đến chúng tôi ?</p>
                   <button
                     className="inline-flex w-full items-center justify-center bg-black px-6 py-4 text-lg 
                      text-white transition-all duration-200 ease-in-out focus:shadow font-medium uppercase tracking-wide
                      "
                     onClick={() => router.push("/register")}
                   >
-                    Register
+                    Đăng ký
                   </button>
                 </div>
               </div>
