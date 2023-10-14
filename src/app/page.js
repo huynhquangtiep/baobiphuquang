@@ -12,7 +12,7 @@ export default function Home() {
   const router = useRouter();
 
   async function getListOfProducts() {
-    const res = await getAllAdminProducts();
+    const res = await getStaticProps();
 
     if (res.success) {
       setProducts(res.data);
