@@ -1,6 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    output: "expert",
-};
-
-module.exports = nextConfig
+module.exports = {
+    output: {
+      export: true,
+    },
+  };
