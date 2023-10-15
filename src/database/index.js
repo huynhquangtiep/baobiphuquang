@@ -1,4 +1,9 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+
+dotenv.config(); // Đọc biến môi trường từ tệp .env
+
+const { MONGODB_CONNECTION_URL } = process.env;
 
 const configOptions = {
   useNewUrlParser: true,
@@ -6,15 +11,12 @@ const configOptions = {
 };
 
 const connectToDB = async () => {
-  const connectionUrl =
-    'mongodb+srv://tieplangtom:tRanG7687@baobiphuquang.wysjfoj.mongodb.net/?retryWrites=true&w=majority';
-
-  mongoose
-    .connect(connectionUrl, configOptions)
-    .then(() => console.log("Ecommerce database connected successfully!"))
-    .catch((err) =>
-      console.log(`Getting Error from DB connection ${err.message}`)
-    );
+  try {
+    await mongoose.connect(MONGODB_CONNECTION_URL, configOptions);
+    console.log('Ecommerce database connected successfully!');
+  } catch (err) {
+    console.log(`Getting Error from DB connection ${err.message}`);
+  }
 };
 
 export default connectToDB;
