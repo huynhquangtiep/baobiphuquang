@@ -1,6 +1,9 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-    output : "standalone",
-}
-
-module.exports = nextConfig
+    output: 'export',
+    // Các cấu hình khác của bạn...
+  };
+  
+  module.exports = nextConfig;
